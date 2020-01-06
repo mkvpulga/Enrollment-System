@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+.Modal{
+	background-color: white;
+	position: absolute;
+	margin: 14% 32.5%;
+	z-index: 1;
+	width: 35%;
+	height: 41%;
+	border: 1px solid black;
+	border-radius: 5px;
+	display: none;
+	
+
+	-webkit-animation-duration: .5s;
+    -webkit-animation-delay: .0s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+	-webkit-backface-visibility: visible!important;
+    -webkit-animation-name: fadeInRight;
+}
+
+@-webkit-keyframes fadeInRight{
+	0%{
+	opacity:0;
+	-webkit-transform:translateX(20px)
+}
+	100%{
+	opacity:1;
+    -webkit-transform:translateX(0)
+	}
+}
+
+.ModalTitle{
+	background-color: rgb(77,99,111);
+	font-family: 'Roboto Condensed', sans-serif;
+	letter-spacing: 1px;
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
+.ModalBody{
+	height: 63%;
+}
+
+.ModalBody table{
+	margin-top: 30px; 
+	margin-left: 30px;
+}
+
+.ModalBody img[id=UserIdIcon]{
+	position: absolute;
+	margin-top: 5px;
+	margin-left: 405px;
+}
+
+.ModalBody img[id=UserPassIcon]{
+	position: absolute;
+	margin-top: 46px;
+	margin-left: 402px;
+}
+
+.ModalBody input[type=text]{
+	outline-color: rgb(77,99,111);
+	height: 30px;
+	width: 400px;
+	padding-left: 7px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 15px;
+}
+
+.ModalBody input[type=password]{
+	outline-color: rgb(77,99,111);
+	height: 30px;
+	width: 400px;
+	padding-left: 7px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 15px;
+}
+
+.ModalBody a[id=BtnCancel]{
+	background-color: rgb(77,99,111);
+	font-family: 'Roboto Condensed', sans-serif;
+	color:  white;
+	outline: none;
+	padding: 5px 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.ModalBody a[id=BtnCancel]:hover{
+	background-color: rgb(77,89,101);
+}
+
+.ModalBody button{
+	margin-top: 3px;
+	margin-bottom: 10px;
+	margin-left: 248px;
+	border: none;
+	background-color: rgb(77,99,111);
+	font-family: 'Roboto Condensed', sans-serif;
+	color:  white;
+	outline: none;
+	padding: 5px 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.ModalBody button:hover{
+	background-color: rgb(77,89,101);
+}
+
+.ModalBody a[id=ForgotPass]{
+	color: rgb(77,99,111);
+}
+
+.ModalBody a[id=ForgotPass]:hover{
+	color: rgb(77,89,101);
+}
+
+.ModalBody a[id=RegisterNow]{
+	margin-left: 198px;
+	color: rgb(77,99,111);
+}
+
+.ModalBody a[id=RegisterNow]:hover{
+	color: rgb(77,89,101);
+}
